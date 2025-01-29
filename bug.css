@@ -1,0 +1,11 @@
+The following CSS code snippet demonstrates a common issue where the specificity of selectors leads to unexpected behavior.  The intention is to style all list items, but due to the higher specificity of the second rule, only the list items within the 'nav' element are styled.
+
+```css
+li {
+  color: blue;
+}
+
+nav li {
+  color: red;
+}
+```
