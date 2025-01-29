@@ -1,0 +1,21 @@
+The solution involves understanding and addressing CSS selector specificity.  While multiple approaches exist to solve this, one effective method involves adjusting the order of CSS rules or using more specific selectors for the intended styles. 
+
+Here's a corrected version:
+
+```css
+nav li {
+  color: red; 
+}
+
+li {
+  color: blue; /*This will apply to all list items not within a <nav> */
+}
+```
+
+Alternatively, if you want all list items to be red, you can remove the less specific rule completely.
+
+```css
+li {
+  color: red;
+}
+```
